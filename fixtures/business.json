@@ -1,0 +1,43 @@
+{
+  "product": "Mercury",
+  "integrations": [
+    {
+      "id": "INST-1",
+      "product": "Mercury",
+      "api": "4.2",
+      "gateway": "旧网关",
+      "bulk": true
+    },
+    {
+      "id": "INST-2",
+      "product": "Mercury",
+      "api": "4.1",
+      "gateway": "旧网关",
+      "bulk": null
+    },
+    {
+      "id": "INST-3",
+      "product": "Atlas",
+      "api": "4.1",
+      "gateway": "旧网关",
+      "bulk": true
+    }
+  ],
+  "notices": [
+    {
+      "ref": "N-61",
+      "integration": "INST-1",
+      "phase": "已发"
+    },
+    {
+      "ref": "N-62",
+      "integration": "INST-2",
+      "phase": "待发"
+    },
+    {
+      "ref": "N-63",
+      "integration": "INST-3",
+      "phase": "待发"
+    }
+  ]
+}
