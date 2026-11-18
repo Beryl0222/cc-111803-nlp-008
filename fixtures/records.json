@@ -1,17 +1,20 @@
 [
-  [
-    "release-4.4",
-    "release-note",
-    "批量导出只在上一版旧网关上需要迁移，状态查询端点不受影响。"
-  ],
-  [
-    "notice-61",
-    "customer-letter",
-    "已建议 INST-1 在升级前迁移数据导出，客户反馈脚本已调整了一半。"
-  ],
-  [
-    "release-4.5",
-    "release-note",
-    "使用旧网关且启用批量导出的租户继续适用新版导出限额。"
-  ]
+  {
+    "record_id": "release-4.4",
+    "source": "release-note",
+    "revision": 1,
+    "text": "批量导出只在上一版旧网关上需要迁移，状态查询端点不受影响。"
+  },
+  {
+    "record_id": "notice-61",
+    "source": "customer-letter",
+    "revision": 1,
+    "text": "已建议 INST-1 在升级前迁移数据导出，客户反馈脚本已调整了一半。"
+  },
+  {
+    "record_id": "release-4.5",
+    "source": "release-note",
+    "revision": 1,
+    "text": "使用旧网关且启用批量导出的租户继续适用新版导出限额。"
+  }
 ]
