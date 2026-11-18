@@ -1,0 +1,12 @@
+{
+  "rules": [
+    {
+      "id": "R-11",
+      "product": "Mercury",
+      "gateway": "旧网关",
+      "before": "4.2",
+      "bulk": true,
+      "work": "批量导出切换"
+    }
+  ]
+}
