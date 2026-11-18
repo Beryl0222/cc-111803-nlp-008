@@ -1,0 +1,14 @@
+[
+  {
+    "record_id": "release-4.3",
+    "source": "release-note",
+    "revision": 1,
+    "text": "数据导出接口将于 4.5 移除，4.2 及更早客户端需要迁移。"
+  },
+  {
+    "record_id": "scope-fix",
+    "source": "release-note",
+    "revision": 2,
+    "text": "更正：仅 4.2 以下客户端需要迁移，产品 Atlas 的同名接口不变。"
+  }
+]
