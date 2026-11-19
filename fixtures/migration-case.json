@@ -1,0 +1,104 @@
+{
+  "rules": [
+    {
+      "id": "R-100",
+      "work": "批量导出切换",
+      "product": "Mercury",
+      "feature": "bulk-export-mc",
+      "source_ref": "release-4.5",
+      "quote": "4.2 以下的旧网关，且已启用批量导出的租户需要完成批量导出迁移。",
+      "conditions": [
+        {
+          "kind": "eq",
+          "key": "product",
+          "label": "产品",
+          "expected": "Mercury",
+          "source_ref": "release-4.5",
+          "quote": "Mercury 旧网关租户适用本说明。"
+        },
+        {
+          "kind": "eq",
+          "key": "gateway",
+          "label": "网关",
+          "expected": "旧网关",
+          "source_ref": "release-4.5",
+          "quote": "4.2 以下的旧网关。"
+        },
+        {
+          "kind": "version_lt",
+          "key": "api",
+          "label": "接口版本",
+          "expected": "4.2",
+          "source_ref": "release-4.5",
+          "quote": "4.2 以下。"
+        },
+        {
+          "kind": "feature",
+          "key": "features",
+          "label": "接口简称",
+          "alias": "批量导出",
+          "source_ref": "release-4.5",
+          "quote": "且已启用批量导出。"
+        }
+      ]
+    },
+    {
+      "id": "R-300",
+      "work": "批量导出切换",
+      "product": "Atlas",
+      "feature": "bulk-export-atlas",
+      "source_ref": "release-atlas-2.0",
+      "quote": "Atlas 旧网关上启用批量导出的集成需要切换到新网关导出。",
+      "conditions": [
+        {
+          "kind": "eq",
+          "key": "product",
+          "label": "产品",
+          "expected": "Atlas",
+          "source_ref": "release-atlas-2.0",
+          "quote": "Atlas 产品的集成适用本说明。"
+        },
+        {
+          "kind": "eq",
+          "key": "gateway",
+          "label": "网关",
+          "expected": "旧网关",
+          "source_ref": "release-atlas-2.0",
+          "quote": "旧网关。"
+        },
+        {
+          "kind": "feature",
+          "key": "features",
+          "label": "接口简称",
+          "alias": "批量导出",
+          "source_ref": "release-atlas-2.0",
+          "quote": "启用批量导出。"
+        }
+      ]
+    }
+  ],
+  "amendments": [
+    {
+      "id": "A-1",
+      "rule_id": "R-100",
+      "type": "补充条件",
+      "source_ref": "bulletin-hosted",
+      "quote": "托管客户例外：Mercury 托管客户不适用旧网关批量导出迁移。",
+      "condition": {
+        "kind": "eq",
+        "key": "hosted",
+        "label": "托管客户",
+        "expected": true,
+        "source_ref": "bulletin-hosted",
+        "quote": "托管客户例外。"
+      }
+    },
+    {
+      "id": "A-2",
+      "rule_id": "R-300",
+      "type": "撤回",
+      "source_ref": "bulletin-withdraw",
+      "quote": "撤回 Atlas 旧网关批量导出迁移要求，已发出的通知相应作废；其他产品说明不受影响。"
+    }
+  ]
+}

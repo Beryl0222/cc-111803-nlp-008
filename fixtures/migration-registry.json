@@ -1,0 +1,151 @@
+{
+  "product": "Mercury",
+  "catalog": [
+    {"product": "Mercury", "alias": "批量导出", "feature": "bulk-export-mc", "function": "Mercury 数据批量导出接口"},
+    {"product": "Atlas", "alias": "批量导出", "feature": "bulk-export-atlas", "function": "Atlas 报表批量导出接口"}
+  ],
+  "integrations": [
+    {
+      "id": "INST-1",
+      "product": "Mercury",
+      "api": "4.1",
+      "gateway": "旧网关",
+      "features": ["bulk-export-mc"],
+      "hosted": false,
+      "bulk": true,
+      "migration": {"rule_id": "R-100", "status": "已开始", "note": "客户反馈脚本已调整了一半"}
+    },
+    {
+      "id": "INST-2",
+      "product": "Mercury",
+      "api": "4.1",
+      "gateway": "旧网关",
+      "features": ["bulk-export-mc"],
+      "hosted": null,
+      "bulk": null,
+      "migration": null
+    },
+    {
+      "id": "INST-3",
+      "product": "Mercury",
+      "api": "4.3",
+      "gateway": "旧网关",
+      "features": ["bulk-export-mc"],
+      "hosted": false,
+      "bulk": true,
+      "migration": null
+    },
+    {
+      "id": "INST-4",
+      "product": "Mercury",
+      "api": "4.0",
+      "gateway": "旧网关",
+      "features": ["bulk-export-mc"],
+      "hosted": true,
+      "bulk": true,
+      "migration": null
+    },
+    {
+      "id": "INST-5",
+      "product": "Atlas",
+      "api": "3.9",
+      "gateway": "旧网关",
+      "features": ["bulk-export-atlas"],
+      "hosted": false,
+      "bulk": true,
+      "migration": null
+    }
+  ],
+  "notices": [
+    {
+      "ref": "N-71",
+      "integration": "INST-1",
+      "rule_id": "R-100",
+      "phase": "已发",
+      "source_ref": "letter-n71",
+      "quote": "请 INST-1 在升级前完成旧网关批量导出迁移。",
+      "snapshot": {
+        "product": "Mercury",
+        "api": "4.1",
+        "gateway": "旧网关",
+        "features": ["bulk-export-mc"],
+        "hosted": null
+      }
+    },
+    {
+      "ref": "N-72",
+      "integration": "INST-2",
+      "rule_id": "R-100",
+      "phase": "已发",
+      "source_ref": "letter-n72",
+      "quote": "请 INST-2 核对旧网关批量导出迁移安排。",
+      "snapshot": {
+        "product": "Mercury",
+        "api": "4.1",
+        "gateway": "旧网关",
+        "features": ["bulk-export-mc"],
+        "hosted": null
+      }
+    },
+    {
+      "ref": "N-73",
+      "integration": "INST-3",
+      "rule_id": "R-100",
+      "phase": "待发",
+      "source_ref": "letter-n73",
+      "quote": "拟通知 INST-3 迁移批量导出。",
+      "snapshot": {
+        "product": "Mercury",
+        "api": "4.1",
+        "gateway": "旧网关",
+        "features": ["bulk-export-mc"],
+        "hosted": null
+      }
+    },
+    {
+      "ref": "N-74",
+      "integration": "INST-4",
+      "rule_id": "R-100",
+      "phase": "待发",
+      "source_ref": "letter-n74",
+      "quote": "拟通知 INST-4 迁移批量导出。",
+      "snapshot": {
+        "product": "Mercury",
+        "api": "4.0",
+        "gateway": "旧网关",
+        "features": ["bulk-export-mc"],
+        "hosted": null
+      }
+    },
+    {
+      "ref": "N-75",
+      "integration": "INST-5",
+      "rule_id": "R-300",
+      "phase": "待发",
+      "source_ref": "letter-n75",
+      "quote": "拟通知 INST-5 切换 Atlas 批量导出。",
+      "snapshot": {
+        "product": "Atlas",
+        "api": "3.9",
+        "gateway": "旧网关",
+        "features": ["bulk-export-atlas"],
+        "hosted": false
+      }
+    },
+    {
+      "ref": "N-76",
+      "integration": "INST-1",
+      "rule_id": "R-300",
+      "phase": "待发",
+      "source_ref": "letter-n76",
+      "quote": "系统按接口简称批量导出误发的待发通知草稿。",
+      "snapshot": {
+        "product": "Mercury",
+        "api": "4.1",
+        "gateway": "旧网关",
+        "features": ["bulk-export-mc"],
+        "hosted": false
+      }
+    }
+  ]
+}

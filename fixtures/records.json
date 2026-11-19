@@ -15,6 +15,36 @@
     "record_id": "release-4.5",
     "source": "release-note",
     "revision": 1,
-    "text": "使用旧网关且启用批量导出的租户继续适用新版导出限额。"
+    "text": "4.2 以下的旧网关，且已启用批量导出的 Mercury 租户需要完成批量导出迁移。"
+  },
+  {
+    "record_id": "release-atlas-2.0",
+    "source": "release-note",
+    "revision": 1,
+    "text": "Atlas 旧网关上启用批量导出的集成需要切换到新网关导出。"
+  },
+  {
+    "record_id": "bulletin-hosted",
+    "source": "supplement-bulletin",
+    "revision": 1,
+    "text": "托管客户例外：Mercury 托管客户不适用旧网关批量导出迁移。"
+  },
+  {
+    "record_id": "bulletin-withdraw",
+    "source": "supplement-bulletin",
+    "revision": 1,
+    "text": "撤回 Atlas 旧网关批量导出迁移要求，已发出的通知相应作废；其他产品说明不受影响。"
+  },
+  {
+    "record_id": "letter-n71",
+    "source": "customer-letter",
+    "revision": 1,
+    "text": "请 INST-1 在升级前完成旧网关批量导出迁移。"
+  },
+  {
+    "record_id": "letter-n72",
+    "source": "customer-letter",
+    "revision": 1,
+    "text": "请 INST-2 核对旧网关批量导出迁移安排。"
   }
 ]
